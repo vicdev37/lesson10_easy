@@ -1,7 +1,7 @@
 //создаем класс Option со свойствами
 
 class Options {
-	constructor(height, width, bg, fontSize, textAlign) {
+	constructor(height = '250px', width = '250px', bg = 'red', fontSize = '30px', textAlign = "center") {
 		this.height = height;
 		this.width = width;
 		this.bg = bg;
@@ -23,7 +23,7 @@ class Options {
 };
 
 //создаем новый объект через класс 
-const options = new Options('250px', '250px', 'red', '30px', 'center');
+const options = new Options();
 
 //запускаем функцию 
 options.createDiv('Объект');
